@@ -5,16 +5,26 @@
 
 extern void imgCvtGrayDoubleToInt(int rows, int cols, double** dbl_img_arr, int** int_img_arr);
 
+void imgCvtGrayDoubleToIntInC(int rows, int cols, double** dbl_img_arr, int** int_img_arr) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            int_img_arr[i][j] = (int)(round(dbl_img_arr[i][j] * 255.0)); // compute then cast to an int for it to match the datatype
+        }
+    }
+}
+
 int main() {
     // declare the variables for the array size
     int rows, cols;
 
     // declare timer
-	// clock_t start, end;
-	// double time_taken;
+	clock_t start, end;
+	double time_taken;
 
     // read the array size input
     scanf_s("%d %d", &rows, &cols);
+
+    /*************************** IN C ***************************/
 
     // dynamically allocate memory for the double (input) array
     double** dbl_img_arr = (double**)malloc(rows * sizeof(double*));
@@ -35,7 +45,7 @@ int main() {
         }
     }
 
-    // temporary input in the integer array
+    // temporary init in the integer array
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             int_img_arr[i][j] = 0;
@@ -52,25 +62,52 @@ int main() {
     }
 
     // time the function
-    // start = clock();
-    // imgCvtGrayDoubleToInt(rows, cols, dbl_img_arr, int_img_arr); // assembly function here
-    // end = clock();
+    start = clock();
+    imgCvtGrayDoubleToIntInC(rows, cols, dbl_img_arr, int_img_arr); // conversion in c
+    end = clock();
 
-    // time_taken = ((double)(end - start)) * 1000 / CLOCKS_PER_SEC;
-    // printf("img conversion from double to int using assembly took: %lf msec\n", time_taken);
-
-    //conversion
+    time_taken = ((double)(end - start)) * 1000 / CLOCKS_PER_SEC;
+    printf("\n"); // spacer
+    printf("img conversion from double to int using c took: %lf msec\n", time_taken);
 
     // compute and print the converted values
-    printf("\n"); // spacer
     printf("Converted Integer Pixel Values in C:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            int_img_arr[i][j] = round(dbl_img_arr[i][j] * 255.0);
             printf("%d ", int_img_arr[i][j]);
         }
         printf("\n");
     }
+    /*************************** END C ***************************/
+
+    /*************************** IN ASSEMBLY ***************************/
+
+    // temporary re-init in the integer array
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            int_img_arr[i][j] = 0;
+        }
+    }
+
+    // time the function
+    start = clock();
+    imgCvtGrayDoubleToInt(rows, cols, dbl_img_arr, int_img_arr); // assembly function here
+    end = clock();
+
+    time_taken = ((double)(end - start)) * 1000 / CLOCKS_PER_SEC;
+    printf("\n"); // spacer
+    printf("img conversion from double to int using assembly took: %lf msec\n", time_taken);
+
+    // compute and print the converted values
+    printf("Converted Integer Pixel Values in x86-64:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", int_img_arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    /*************************** END ASSEMBLY ***************************/
 
     return 0;
 }
