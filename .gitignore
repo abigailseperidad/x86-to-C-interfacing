@@ -49,3 +49,10 @@ ipch/
 *.psess
 *.vsp
 *.vspx
+*.opendb
+*.db-wal
+*.db-shm
+*.db
+*.vsidx
+*.json
+*.db
