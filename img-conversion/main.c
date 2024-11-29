@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 extern void imgCvtGrayDoubleToInt(int rows, int cols, double** dbl_img_arr, int** int_img_arr);
 
@@ -13,7 +14,7 @@ int main() {
 	// double time_taken;
 
     // read the array size input
-    scanf("%d %d", &rows, &cols);
+    scanf_s("%d %d", &rows, &cols);
 
     // dynamically allocate memory for the double (input) array
     double** dbl_img_arr = (double**)malloc(rows * sizeof(double*));
@@ -30,7 +31,7 @@ int main() {
     // store the inputs in the double array
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            scanf("%lf", &dbl_img_arr[i][j]);
+            scanf_s("%lf", &dbl_img_arr[i][j]);
         }
     }
 
@@ -58,11 +59,14 @@ int main() {
     // time_taken = ((double)(end - start)) * 1000 / CLOCKS_PER_SEC;
     // printf("img conversion from double to int using assembly took: %lf msec\n", time_taken);
 
-    // print the converted values
+    //conversion
+
+    // compute and print the converted values
     printf("\n"); // spacer
-    printf("Converted Integer Pixel Values:\n");
+    printf("Converted Integer Pixel Values in C:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
+            int_img_arr[i][j] = round(dbl_img_arr[i][j] * 255.0);
             printf("%d ", int_img_arr[i][j]);
         }
         printf("\n");
