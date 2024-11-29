@@ -33,7 +33,7 @@ inner_loop:
 
     ; Perform conversion
     mulsd xmm1, xmm9            ; xmm1 *= 255.0
-    roundsd xmm0, xmm0, 2       ; round up
+    roundsd xmm1, xmm1, 2       ; round up
     cvtsd2si r14, xmm1          ; convert to int (truncate)
 
     ; Store result in int_img_arr[i][j]
