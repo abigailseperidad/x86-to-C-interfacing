@@ -1,14 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\",
+  "WorkspaceRootPath": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{819E86A2-85F6-47DF-ACDB-538B69017B22}|img-conversion.vcxproj|solutionrelative:asmfunc.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +24,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-01T10:19:37.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\README.md",
+              "RelativeDocumentMoniker": "..\\README.md",
+              "ToolTip": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\README.md",
+              "RelativeToolTip": "..\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-11-30T12:44:17.817Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "asmfunc.asm",
-              "DocumentMoniker": "C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm",
+              "DocumentMoniker": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm",
               "RelativeDocumentMoniker": "asmfunc.asm",
-              "ToolTip": "C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm",
+              "ToolTip": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\asmfunc.asm",
               "RelativeToolTip": "asmfunc.asm",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-11-26T06:34:30.006Z",
               "EditorCaption": ""
@@ -37,11 +69,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\main.c",
+              "DocumentMoniker": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\Abby\\Documents\\GitHub\\x86-to-C-interfacing\\img-conversion\\main.c",
+              "ToolTip": "C:\\Users\\jekac\\Desktop\\x86-to-C-interfacing\\img-conversion\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAmpmZmZkuwJwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-26T06:33:16.864Z",
               "EditorCaption": ""

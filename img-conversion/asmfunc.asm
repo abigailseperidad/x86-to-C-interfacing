@@ -1,5 +1,10 @@
+; Seperidad, Abigail
+; Cataluña, Jorice Erika
+; S13
+
 section .data
 conv dq 255.0
+smalldecimal dq 1.0e-7
 
 section .text
 bits 64
@@ -33,10 +38,12 @@ inner_loop:
 
     ; Perform conversion
     mulsd xmm1, xmm9            ; xmm1 *= 255.0
+    addsd xmm1, qword[smalldecimal] ;to round up if 0.5, because most likely it will be 0.499999...
+    roundsd xmm1, xmm1, 0
     cvtsd2si r14, xmm1          ; convert to int
 
     ; Store result in int_img_arr[i][j]
-    mov [r12 + r13 * 4], r14    ; int_img_arr[i][j] = (int)xmm1
+    mov [r12 + r13 * 4], r14    ; x86_int_img_arr[i][j] = (int)xmm1
 
     inc r13                     ; j++
     jmp inner_loop
