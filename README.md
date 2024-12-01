@@ -1,26 +1,35 @@
-# x86-to-C-interfacing
-# Seperidad, Abigail
-# Cataluña, Jorice Erika
-# S13
+## x86-to-C-interfacing
+Seperidad, Abigail
 
-# (10x10)
-# Execution Time of C: 0.000000 msec
-# Execution Time of x86: 0.000000 msec
-# Time Difference: 0.000000 msec
+Cataluña, Jorice Erika
 
-# (100x100)
-# Execution Time of C: 0.457143 msec
-# Execution Time of x86: 0.028571 msec
-# Time Difference: 0.428571 msec
+S13
+##
+### (10x10)
+Execution Time of C: 0.000000 msec
 
-# (1000x1000)
-# Execution Time of C: 41.657143 msec
-# Execution Time of x86: 1.257143 msec
-# Time Difference: 40.400000 msec
+Execution Time of x86: 0.000000 msec
 
-# Short Analysis: During 10x10, the input was too low that the speed of the computation was negligible enough by the system, thus the 0.00 msec for both C and x86. However, the speed of x86 assembly is evidently faster than C if the input reaches 1 000 000 and above. This makes x86 more efficient if the number of input are way too high.
+Time Difference: 0.000000 msec
 
-# Screenshot of Program Output with Correctness Check
+### (100x100)
+Execution Time of C: 0.457143 msec
+
+Execution Time of x86: 0.028571 msec
+
+Time Difference: 0.428571 msec
+
+### (1000x1000)
+Execution Time of C: 41.657143 msec
+
+Execution Time of x86: 1.257143 msec
+
+Time Difference: 40.400000 msec
+
+### Short Analysis
+During 10x10, the input was too low that the speed of the computation was negligible enough by the system, thus the 0.00 msec for both C and x86. However, the speed of x86 assembly is evidently faster than C if the input reaches 1 000 000 and above. This makes x86 more efficient if the dataset is huge.
+
+## Screenshot of Program Output with Correctness Check
 (3 x 4 specs)
 ![image](https://github.com/user-attachments/assets/2acbbf00-b3ba-4b25-8718-296ab5e0fa2d)
 
