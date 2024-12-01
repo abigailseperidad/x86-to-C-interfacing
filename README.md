@@ -1,7 +1,9 @@
 ## x86-to-C-interfacing
 Seperidad, Abigail
+
 Cataluña, Jorice Erika
-S13
+
+LBYARCH - S13
 
 ## Short Video Demo
 [Click here to watch the demo](https://drive.google.com/file/d/14D1VlDNHVTRta-IJR7Bsu83JuvQsx7bM/view?usp=sharing)
