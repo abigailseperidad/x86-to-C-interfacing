@@ -8,7 +8,7 @@ LBYARCH - S13
 ## Short Video Demo
 [Click here to watch the demo](https://drive.google.com/file/d/14D1VlDNHVTRta-IJR7Bsu83JuvQsx7bM/view?usp=sharing) or access this link: https://drive.google.com/file/d/14D1VlDNHVTRta-IJR7Bsu83JuvQsx7bM/view?usp=sharing
 
-## Testing Results
+## Performance Results
 ### (10x10)
 Execution Time of C: 0.000000 msec
 
